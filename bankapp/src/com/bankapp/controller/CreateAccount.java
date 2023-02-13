@@ -15,7 +15,7 @@ public class CreateAccount extends Controller {
 			System.out.println("Enter Account Number: ");
 			user.accountNumber = scn.nextLong();
 			System.out.println("Balance: ");
-			user.balance = scn.nextLong();
+			user.balance = scn.nextDouble();
 
 			System.out.println("*******************************************");
 			System.out.println(user.name+" 💆 Acoount created successfully");
@@ -24,7 +24,8 @@ public class CreateAccount extends Controller {
 			modeCall();
 		} catch (Exception e) {
 			System.out.println("Enter valid input");
-			modeCall();
+			//modeCall();
+			createAccount();
 		}
 	}
 }
